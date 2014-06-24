@@ -1,0 +1,2 @@
+#!/bin/sh
+python -tt -c "from wiki_info import main; main();" "$@"
