@@ -34,6 +34,7 @@ def main():
     args = docopt.docopt(__doc__, version="0.0.1")
     
     sys.stdout.write("\t".join(WIKI_VALUES))
+    sys.stdout.write("\n")
     
     for wiki_info in get(args['--api']):
         
