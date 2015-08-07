@@ -1,3 +1,5 @@
+# requires Python 3
+
 """
 Gathers general information about a set of wikis (???) via a call to
 site_info and writes out to a TSV format that mysqlimport appreciates
@@ -34,6 +36,7 @@ def main():
     args = docopt.docopt(__doc__, version="0.0.1")
     
     sys.stdout.write("\t".join(WIKI_VALUES))
+    sys.stdout.write("\n")
     
     for wiki_info in get(args['--api']):
         
