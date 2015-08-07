@@ -12,3 +12,4 @@ the library:
     for wi in wiki_info.get("http://en.wikipedia.org"):
         print wi['wiki']
     
+Requires Python 3.

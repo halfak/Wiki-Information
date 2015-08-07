@@ -1,3 +1,5 @@
+# requires Python 3
+
 """
 Gathers general information about a set of wikis (???) via a call to
 site_info and writes out to a TSV format that mysqlimport appreciates
